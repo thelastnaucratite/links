@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte serifada */
+            background-color: #0a1f44; /* Azul escuro intenso */
+            color: #ffffff; /* Texto branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .link-item {
+            display: block;
+            padding: 1rem 1.5rem;
+            border: 2px solid #ffffff; /* Borda branca */
+            border-radius: 50px; /* Botões arredondados */
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .link-item:hover {
+            background-color: #ffffff;
+            color: #0a1f44; /* Azul escuro do fundo */
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Para manter a consistência em dispositivos móveis */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .link-item {
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meus Links</h1>
+        <div class="links-list">
+            <a href="https://github.com/seu-usuario" target="_blank" class="link-item">GitHub</a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="link-item">LinkedIn</a>
+            <a href="https://twitter.com/seu-usuario" target="_blank" class="link-item">Twitter</a>
+            <a href="https://seusite.com" target="_blank" class="link-item">Meu Site</a>
+            <a href="https://instagram.com/seu-usuario" target="_blank" class="link-item">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
